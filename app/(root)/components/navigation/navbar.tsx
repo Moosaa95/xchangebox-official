@@ -67,7 +67,7 @@ export function Navbar() {
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-2 group">
                             <Image
-                                src="/xchangebox_logo.png"
+                                src="/logos/xchangebox_logo.png"
                                 alt="XchangeBox"
                                 width={180}
                                 height={45}
@@ -85,7 +85,7 @@ export function Navbar() {
                                 onMouseLeave={() => setIsProductsOpen(false)}
                             >
                                 <button
-                                    className="flex items-center gap-1 font-medium text-gray-700 transition-colors hover:text-red-600"
+                                    className="flex items-center gap-1 font-medium text-gray-700 transition-colors hover:text-red-600 cursor-pointer"
                                 >
                                     Products
                                     <ChevronDown
@@ -109,7 +109,7 @@ export function Navbar() {
                                                         <Link
                                                             key={product.name}
                                                             href={product.href}
-                                                            className="group p-4 rounded-xl hover:bg-gray-50 transition-colors"
+                                                            className="group p-4 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer"
                                                         >
                                                             <div className="flex items-start gap-3">
                                                                 <div className="text-2xl">{product.icon}</div>
@@ -136,7 +136,7 @@ export function Navbar() {
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="font-medium text-gray-700 transition-colors hover:text-red-600"
+                                    className="font-medium text-gray-700 transition-colors hover:text-red-600 cursor-pointer"
                                 >
                                     {link.name}
                                 </Link>
@@ -146,7 +146,7 @@ export function Navbar() {
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="px-6 py-2.5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-colors shadow-lg shadow-red-500/30"
+                                className="px-6 py-2.5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-colors shadow-lg shadow-red-500/30 cursor-pointer"
                             >
                                 Get Started
                             </motion.button>
