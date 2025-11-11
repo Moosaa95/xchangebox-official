@@ -39,7 +39,7 @@ export function HeroSection() {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="text-lg leading-relaxed text-gray-600 sm:text-xl lg:max-w-lg"
                         >
-                            We build financial and digital infrastructure that powers real-world growth — from farms to factories to financial systems.
+                            We build financial and digital infrastructure that powers real-world growth from farms to factories to financial systems.
                         </motion.p>
 
                         <motion.div
