@@ -7,7 +7,7 @@ const contactMethods = [
     {
         icon: Mail,
         title: 'Email Us',
-        detail: 'hello@xchangebox.ng',
+        detail: 'contact@xchangeboxng.com',
         description: 'Send us an email anytime',
         color: 'from-blue-500 to-blue-600',
     },
