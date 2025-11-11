@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Twitter, Linkedin, Mail, MapPin, Facebook, Instagram, Send, ArrowRight } from 'lucide-react';
+import { Linkedin, Mail, MapPin, Facebook, Instagram, Send, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -23,19 +23,18 @@ const footerLinks = {
         { name: 'Support', href: '/contact' },
     ],
     Legal: [
-        { name: 'Privacy Policy', href: '#' },
-        { name: 'Terms of Service', href: '#' },
-        { name: 'Compliance', href: '#' },
-        { name: 'Security', href: '#' },
+        { name: 'Privacy Policy', href: '/privacy-policy' },
+        { name: 'Terms of Service', href: '/terms-of-service' },
+        { name: 'Compliance', href: '/compliance' },
     ],
 };
 
 const socialLinks = [
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter', color: 'hover:bg-blue-500' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn', color: 'hover:bg-blue-700' },
+    // { icon: Twitter, href: 'https://twitter.com', label: 'Twitter', color: 'hover:bg-blue-500' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/xchangebox', label: 'LinkedIn', color: 'hover:bg-blue-700' },
     { icon: Facebook, href: 'https://facebook.com', label: 'Facebook', color: 'hover:bg-blue-600' },
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram', color: 'hover:bg-pink-600' },
-    { icon: Mail, href: 'mailto:hello@xchangebox.ng', label: 'Email', color: 'hover:bg-red-600' },
+    { icon: Instagram, href: 'https://www.instagram.com/xchangebox.ng', label: 'Instagram', color: 'hover:bg-pink-600' },
+    { icon: Mail, href: 'mailto:contact@xchangeboxng.com', label: 'Email', color: 'hover:bg-red-600' },
 ];
 
 export function Footer() {
@@ -54,7 +53,7 @@ export function Footer() {
     };
 
     return (
-        <footer className="border-t border-gray-200 bg-gradient-to-br from-gray-50 to-white">
+        <footer className="border-t border-gray-200 bg-linear-to-br from-gray-50 to-white">
             <div className="container-custom py-16">
                 <div className="grid gap-12 lg:grid-cols-5">
                     {/* Brand Column */}
@@ -82,7 +81,7 @@ export function Footer() {
 
                             <p className="mb-6 text-gray-600">
                                 Building financial and digital infrastructure that powers real-world growth
-                                — from farms to factories to financial systems.
+                                from farms to factories to financial systems.
                             </p>
 
                             {/* Newsletter */}
@@ -123,13 +122,13 @@ export function Footer() {
                             {/* Contact info */}
                             <div className="mb-6 space-y-2">
                                 <div className="flex items-start gap-2 text-sm text-gray-600">
-                                    <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0" />
+                                    <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
                                     <span>Fct Abuja, Nigeria</span>
                                 </div>
                                 <div className="flex items-start gap-2 text-sm text-gray-600">
-                                    <Mail className="mt-0.5 h-4 w-4 flex-shrink-0" />
-                                    <a href="mailto:hello@xchangebox.ng" className="hover:text-red-600 transition-colors">
-                                        hello@xchangebox.ng
+                                    <Mail className="mt-0.5 h-4 w-4 shrink-0" />
+                                    <a href="mailto:contact@xchangeboxng.com" className="hover:text-red-600 transition-colors">
+                                        contact@xchangeboxng.com
                                     </a>
                                 </div>
                             </div>
@@ -197,7 +196,7 @@ export function Footer() {
                     <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-600 sm:flex-row">
                         <p>© 2025 XchangeBox Technologies | All Rights Reserved</p>
                         {/* <div className="flex items-center gap-2">
-                            <span className="text-gray-500">Made with</span>
+                            <span className="text-gray-500">Built with</span>
                             <motion.span
                                 animate={{ scale: [1, 1.2, 1] }}
                                 transition={{ duration: 1, repeat: Infinity, repeatDelay: 2 }}
@@ -205,7 +204,13 @@ export function Footer() {
                             >
                                 ❤️
                             </motion.span>
-                            <span className="text-gray-500">in Nigeria</span>
+                            <span className="text-gray-500">by</span>
+                            <Link
+                                href="https://www.linkedin.com/in/abdullahi-musa-986147180"
+                                className="text-gray-500"
+                            >
+                                Musa
+                            </Link>
                         </div> */}
                     </div>
                 </motion.div>

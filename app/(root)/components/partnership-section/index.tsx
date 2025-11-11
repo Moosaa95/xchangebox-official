@@ -43,7 +43,7 @@ export function PartnershipSection() {
                 >
                     <h2 className="mb-4 text-4xl font-bold text-gray-900 lg:text-5xl">
                         Let&apos;s Build{' '}
-                        <span className="text-gradient bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                        <span className="text-gradient bg-linear-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
                             Liquidity Together
                         </span>
                     </h2>
@@ -69,7 +69,7 @@ export function PartnershipSection() {
                                     {/* Icon */}
                                     <div className="mb-6">
                                         <div
-                                            className={`inline-flex rounded-xl bg-gradient-to-br ${model.color} p-4`}
+                                            className={`inline-flex rounded-xl bg-linear-to-br ${model.color} p-4`}
                                         >
                                             <Icon className="h-8 w-8 text-white" />
                                         </div>
@@ -83,7 +83,7 @@ export function PartnershipSection() {
                                     <ul className="mb-8 space-y-2">
                                         {model.benefits.map((benefit) => (
                                             <li key={benefit} className="flex items-start gap-2 text-sm">
-                                                <div className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" />
+                                                <div className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-red-500" />
                                                 <span className="text-gray-700">{benefit}</span>
                                             </li>
                                         ))}
@@ -97,7 +97,7 @@ export function PartnershipSection() {
 
                                     {/* Hover gradient effect */}
                                     <div
-                                        className={`absolute -inset-px -z-10 rounded-2xl bg-gradient-to-br ${model.color} opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-20`}
+                                        className={`absolute -inset-px -z-10 rounded-2xl bg-linear-to-br ${model.color} opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-20`}
                                     />
                                 </div>
                             </motion.div>
@@ -113,7 +113,7 @@ export function PartnershipSection() {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className="mt-16"
                 >
-                    <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-red-600 to-red-700 p-12 text-center">
+                    <div className="relative overflow-hidden rounded-2xl bg-linear-to-r from-red-600 to-red-700 p-12 text-center">
                         {/* Background pattern */}
                         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
 

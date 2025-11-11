@@ -71,9 +71,9 @@ export default function ContactPage() {
     return (
         <main className="min-h-screen pt-20">
             {/* Hero */}
-            <section className="relative overflow-hidden bg-gradient-to-br from-[hsl(var(--navy-darker))] via-[hsl(var(--navy-dark))] to-[hsl(var(--navy-darker))] py-24">
+            <section className="relative overflow-hidden bg-linear-to-br from-[hsl(var(--navy-darker))] via-[hsl(var(--navy-dark))] to-[hsl(var(--navy-darker))] py-24">
                 <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-                <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 via-transparent to-purple-500/10" />
+                <div className="absolute inset-0 bg-linear-to-r from-red-500/10 via-transparent to-purple-500/10" />
 
                 <div className="container-custom relative z-10">
                     <motion.div
@@ -84,7 +84,7 @@ export default function ContactPage() {
                     >
                         <h1 className="mb-6 text-5xl font-bold text-white lg:text-6xl">
                             Let's Build Something{' '}
-                            <span className="bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
                                 Amazing Together
                             </span>
                         </h1>
@@ -111,7 +111,7 @@ export default function ContactPage() {
                                     className="group"
                                 >
                                     <div className="h-full rounded-2xl border-2 border-gray-200 bg-white p-8 text-center transition-all hover:border-red-500 hover:shadow-xl">
-                                        <div className={`mb-4 inline-flex rounded-xl bg-gradient-to-br ${method.color} p-4`}>
+                                        <div className={`mb-4 inline-flex rounded-xl bg-linear-to-br ${method.color} p-4`}>
                                             <Icon className="h-8 w-8 text-white" />
                                         </div>
                                         <h3 className="mb-2 text-xl font-bold text-gray-900">{method.title}</h3>
@@ -310,7 +310,7 @@ export default function ContactPage() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: 0.4 }}
-                                className="mt-8 rounded-2xl bg-gradient-to-br from-red-600 to-red-700 p-8 text-white"
+                                className="mt-8 rounded-2xl bg-linear-to-br from-red-600 to-red-700 p-8 text-white"
                             >
                                 <div className="mb-4 flex items-center gap-3">
                                     <Clock className="h-8 w-8" />

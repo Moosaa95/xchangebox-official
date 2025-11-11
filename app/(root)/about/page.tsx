@@ -95,9 +95,9 @@ export default function AboutPage() {
     return (
         <main className="min-h-screen pt-20">
             {/* Hero Section */}
-            <section className="relative overflow-hidden bg-gradient-to-br from-[hsl(var(--navy-darker))] via-[hsl(var(--navy-dark))] to-[hsl(var(--navy-darker))] py-24">
+            <section className="relative overflow-hidden bg-linear-to-br from-[hsl(var(--navy-darker))] via-[hsl(var(--navy-dark))] to-[hsl(var(--navy-darker))] py-24">
                 <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-                <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 via-transparent to-purple-500/10" />
+                <div className="absolute inset-0 bg-linear-to-r from-red-500/10 via-transparent to-purple-500/10" />
 
                 <div className="container-custom relative z-10">
                     <motion.div
@@ -108,7 +108,7 @@ export default function AboutPage() {
                     >
                         <h1 className="mb-6 text-5xl font-bold text-white lg:text-6xl">
                             Building the Future of{' '}
-                            <span className="bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
                                 Financial Inclusion
                             </span>
                         </h1>
@@ -147,8 +147,8 @@ export default function AboutPage() {
                             <h2 className="mb-6 text-4xl font-bold text-gray-900">Our Story</h2>
                             <div className="space-y-4 text-lg text-gray-600">
                                 <p>
-                                    XchangeBox was born from a simple observation: millions of hardworking Nigerians
-                                    — farmers, merchants, women entrepreneurs — are trapped in a liquidity crisis.
+                                    XchangeBox was born from a simple observation: millions of hardworking Nigerian
+                                    farmers, merchants, women entrepreneurs all trapped in a liquidity crisis.
                                     Not because they lack assets, but because the financial system doesn't recognize
                                     their value.
                                 </p>
@@ -164,7 +164,7 @@ export default function AboutPage() {
                                     liquid, bankable assets.
                                 </p>
                                 <p className="font-semibold text-red-600">
-                                    Today, we're not just moving money — we're moving opportunity.
+                                    Today, we're not just moving money - we're moving opportunity.
                                 </p>
                             </div>
                         </motion.div>
@@ -176,7 +176,7 @@ export default function AboutPage() {
                             transition={{ duration: 0.8 }}
                             className="relative"
                         >
-                            <div className="relative h-full min-h-[400px] overflow-hidden rounded-2xl bg-gradient-to-br from-red-500 to-red-700 p-12">
+                            <div className="relative h-full min-h-[400px] overflow-hidden rounded-2xl bg-linear-to-br from-red-500 to-red-700 p-12">
                                 <div className="absolute inset-0 bg-grid-pattern opacity-10" />
                                 <div className="relative z-10 flex h-full flex-col justify-center space-y-8 text-white">
                                     <div className="text-6xl">📈</div>
@@ -233,7 +233,7 @@ export default function AboutPage() {
                                     className="group"
                                 >
                                     <div className="h-full rounded-2xl border-2 border-gray-200 bg-white p-8 transition-all hover:border-red-500 hover:shadow-xl">
-                                        <div className={`mb-6 inline-flex rounded-xl bg-gradient-to-br ${value.color} p-4`}>
+                                        <div className={`mb-6 inline-flex rounded-xl bg-linear-to-br ${value.color} p-4`}>
                                             <Icon className="h-8 w-8 text-white" />
                                         </div>
                                         <h3 className="mb-3 text-xl font-bold text-gray-900">{value.title}</h3>
@@ -264,7 +264,7 @@ export default function AboutPage() {
 
                     <div className="relative">
                         {/* Timeline line */}
-                        <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-500 via-purple-500 to-blue-500 md:left-1/2" />
+                        <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-linear-to-b from-red-500 via-purple-500 to-blue-500 md:left-1/2" />
 
                         <div className="space-y-12">
                             {timeline.map((item, index) => (
@@ -286,7 +286,7 @@ export default function AboutPage() {
                                     </div>
 
                                     {/* Icon */}
-                                    <div className="absolute left-8 md:left-1/2 -ml-4 flex h-16 w-16 items-center justify-center rounded-full border-4 border-white bg-gradient-to-br from-red-500 to-red-600 text-3xl shadow-lg">
+                                    <div className="absolute left-8 md:left-1/2 -ml-8 flex h-16 w-16 items-center justify-center rounded-full border-4 border-white bg-linear-to-br from-red-500 to-red-600 text-3xl shadow-lg">
                                         {item.icon}
                                     </div>
 
@@ -349,7 +349,7 @@ export default function AboutPage() {
             </section>
 
             {/* CTA */}
-            <section className="bg-gradient-to-br from-red-600 to-red-700 py-24">
+            <section className="bg-linear-to-br from-red-600 to-red-700 py-24">
                 <div className="container-custom">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}

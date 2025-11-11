@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { LucideIcon, ArrowRight, TrendingUp, Users } from 'lucide-react';
+import { LucideIcon, ArrowRight, TrendingUp } from 'lucide-react';
 
 interface ProductCardProps {
     name: string;
@@ -48,7 +48,7 @@ export function EnhancedProductCard({
         >
             <div className={`relative h-full overflow-hidden rounded-3xl border-2 ${borderColor} bg-white transition-all duration-500 hover:shadow-2xl hover:shadow-${color.split('-')[1]}-500/20`}>
                 {/* Image Section with Skeleton Overlay */}
-                <div className="relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+                <div className="relative aspect-video overflow-hidden bg-linear-to-br from-gray-50 to-gray-100">
                     {/* Product Image */}
                     <motion.img
                         src={image}
