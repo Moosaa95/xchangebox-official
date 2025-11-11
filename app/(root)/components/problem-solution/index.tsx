@@ -272,7 +272,7 @@ export function ProblemSolution() {
                     transition={{ duration: 0.6, delay: 1.5 }}
                     className="text-center mt-16"
                 >
-                    <button className="group inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-red-600 to-red-500 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-red-500/30 transition-all">
+                    <button className="group inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-red-600 to-red-500 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-red-500/30 transition-all cursor-pointer">
                         See How It Works
                         <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </button>

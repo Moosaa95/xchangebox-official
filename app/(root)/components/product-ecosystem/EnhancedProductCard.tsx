@@ -76,7 +76,7 @@ export function EnhancedProductCard({
                             {/* Grid Pattern */}
                             <defs>
                                 <pattern id={`grid-${index}`} width="40" height="40" patternUnits="userSpaceOnUse">
-                                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" opacity="0.3"/>
+                                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" opacity="0.3" />
                                 </pattern>
                             </defs>
                             <rect width="100%" height="100%" fill={`url(#grid-${index})`} />
@@ -274,7 +274,7 @@ export function EnhancedProductCard({
 
                     {/* CTA Button */}
                     <motion.button
-                        className={`group/btn inline-flex items-center gap-2 rounded-lg bg-linear-to-r ${color} px-6 py-3 font-semibold text-white shadow-lg transition-all hover:shadow-xl`}
+                        className={`group/btn inline-flex items-center gap-2 rounded-lg bg-linear-to-r ${color} px-6 py-3 font-semibold text-white shadow-lg transition-all hover:shadow-xl cursor-pointer`}
                         whileHover={{ scale: 1.02, y: -2 }}
                         whileTap={{ scale: 0.98 }}
                     >

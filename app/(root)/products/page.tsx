@@ -32,19 +32,6 @@ const products = [
     stats: { label: '70% women-led programs', value: '70%' },
   },
   {
-    name: 'Rouche',
-    tagline: 'Urban mobility, powered by data',
-    description: 'Asset financing platform for urban transport. Get drivers on the road with flexible payment plans and real-time monitoring.',
-    category: 'Mobility',
-    icon: Car,
-    emoji: '🚗',
-    href: '/products/rouche',
-    color: 'from-blue-500 to-indigo-600',
-    bgColor: 'bg-blue-50',
-    borderColor: 'border-blue-200',
-    stats: { label: 'Active mobility platform', value: 'Live' },
-  },
-  {
     name: 'Shinobi Core',
     tagline: 'The digital core for microfinance',
     description: 'Complete banking infrastructure for microfinance institutions. From core banking to compliance, all in one platform.',
@@ -63,9 +50,9 @@ export default function ProductsPage() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[hsl(var(--navy-darker))] via-[hsl(var(--navy-dark))] to-[hsl(var(--navy-darker))] py-24">
+      <section className="relative overflow-hidden bg-linear-to-br from-[hsl(var(--navy-darker))] via-[hsl(var(--navy-dark))] to-[hsl(var(--navy-darker))] py-24">
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-        <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 via-transparent to-purple-500/10" />
+        <div className="absolute inset-0 bg-linear-to-r from-red-500/10 via-transparent to-purple-500/10" />
 
         <div className="container-custom relative z-10">
           <motion.div
@@ -76,7 +63,7 @@ export default function ProductsPage() {
           >
             <h1 className="mb-6 text-5xl font-bold text-white lg:text-6xl">
               An Ecosystem,{' '}
-              <span className="bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
                 Not Just an App
               </span>
             </h1>
@@ -128,7 +115,7 @@ export default function ProductsPage() {
                       </div>
                       <Link
                         href={product.href}
-                        className={`inline-flex items-center gap-2 rounded-lg bg-gradient-to-r ${product.color} px-8 py-4 font-semibold text-white transition-all hover:shadow-lg hover:shadow-${product.color.split('-')[1]}-500/50`}
+                        className={`inline-flex items-center gap-2 rounded-lg bg-linear-to-r ${product.color} px-8 py-4 font-semibold text-white transition-all hover:shadow-lg hover:shadow-${product.color.split('-')[1]}-500/50`}
                       >
                         Learn More
                         <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -140,13 +127,13 @@ export default function ProductsPage() {
                       <div className={`relative overflow-hidden rounded-2xl border-4 ${product.borderColor} ${product.bgColor} p-12 aspect-square flex items-center justify-center transition-all group-hover:shadow-2xl`}>
                         <div className="text-center">
                           <div className="mb-6 text-9xl">{product.emoji}</div>
-                          <div className={`inline-flex rounded-xl bg-gradient-to-br ${product.color} px-6 py-3`}>
+                          <div className={`inline-flex rounded-xl bg-linear-to-br ${product.color} px-6 py-3`}>
                             <Icon className="h-12 w-12 text-white" />
                           </div>
                         </div>
                         {/* Decorative elements */}
-                        <div className={`absolute -top-10 -right-10 h-40 w-40 rounded-full bg-gradient-to-br ${product.color} opacity-10 blur-3xl`} />
-                        <div className={`absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-gradient-to-br ${product.color} opacity-10 blur-3xl`} />
+                        <div className={`absolute -top-10 -right-10 h-40 w-40 rounded-full bg-linear-to-br ${product.color} opacity-10 blur-3xl`} />
+                        <div className={`absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-linear-to-br ${product.color} opacity-10 blur-3xl`} />
                       </div>
                     </div>
                   </div>
@@ -158,7 +145,7 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-br from-red-600 to-red-700 py-24">
+      <section className="bg-linear-to-br from-red-600 to-red-700 py-24">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
