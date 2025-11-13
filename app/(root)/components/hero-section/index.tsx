@@ -26,10 +26,10 @@ export function HeroSection() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl"
                         >
-                            Connecting Finance,
+                            Connecting Trade,
                             <br />
                             <span className="text-transparent bg-clip-text bg-linear-to-r from-red-600 to-red-500">
-                                Trade & Inclusion
+                                Finance & Inclusion
                             </span>
                         </motion.h1>
 
@@ -64,8 +64,8 @@ export function HeroSection() {
                             className="flex items-center gap-6 pt-4"
                         >
                             <div className="flex flex-col">
-                                <span className="text-2xl font-bold text-gray-900">₦10M+</span>
-                                <span className="text-sm text-gray-600">Trades Financed</span>
+                                <span className="text-2xl font-bold text-gray-900">₦5,000+</span>
+                                <span className="text-sm text-gray-600">Trade Cycles Financed</span>
                             </div>
                             <div className="h-12 w-px bg-gray-300" />
                             <div className="flex flex-col">

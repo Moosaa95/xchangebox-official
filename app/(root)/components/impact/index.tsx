@@ -15,9 +15,9 @@ interface Stat {
 const stats: Stat[] = [
     {
         icon: Coins,
-        value: 20,
-        suffix: 'M+',
-        label: 'Trades Financed',
+        value: 5000,
+        suffix: '+',
+        label: 'Trade Cycles Financed',
         color: 'from-green-500 to-emerald-600',
     },
     {
@@ -38,7 +38,7 @@ const stats: Stat[] = [
         icon: MapPin,
         value: 4,
         suffix: '+',
-        label: 'States Active',
+        label: 'Nigeria States Active',
         color: 'from-purple-500 to-violet-600',
     },
 ];
@@ -61,27 +61,59 @@ const testimonials: Testimonial[] = [
         color: "from-green-500 to-emerald-600",
     },
     {
-        quote: "Ta hanyar Kidashi, na sami damar fara kasuwanci na tare da tallafi daga mutanen amintattuna. Sharuɗɗan biyan kuɗi masu sassauci sun taimaka sosai a gare mu.",
+        quote: "Ta hanyar XchangeBox, na sami damar fara kasuwanci na tare da tallafi daga mutanen amintattuna. Sharuɗɗan biyan kuɗi masu sassauci sun taimaka sosai a gare mu.",
         author: "Fatima Mohammed",
         role: "Entrepreneur",
         company: "Women's Cooperative",
         color: "from-pink-500 to-rose-600",
     },
     {
-        quote: "Shinobi Core gave our microfinance bank the infrastructure we needed to scale. We've doubled our loan processing capacity in just 6 months.",
+        quote: "XchangeBox gave our cooperative the digital infrastructure we needed to scale. We've doubled our transaction volume in just 6 months.",
         author: "Chukwudi Okonkwo",
         role: "Operations Director",
-        company: "Payrep MFB",
+        company: "Payrep Cooperative",
         color: "from-purple-500 to-violet-600",
     },
     {
-        quote: "The instant trade finance from Farm4Factory has revolutionized how we work with suppliers. No more cash flow bottlenecks.",
+        quote: "The instant financing and vendor management tools on XchangeBox have revolutionized how we work with suppliers. No more cash flow bottlenecks.",
         author: "Ngozi Adeola",
         role: "Accounting Manager",
         company: "Food Processing Ltd",
         color: "from-blue-500 to-indigo-600",
     },
 ];
+
+
+// const testimonials: Testimonial[] = [
+//     {
+//         quote: "XchangeBox transformed how we access financing. What used to take 60 days now happens in real-time. Our entire supply chain is more efficient.",
+//         author: "Adebayo Johnson",
+//         role: "CEO",
+//         company: "AgriConnect Nigeria",
+//         color: "from-green-500 to-emerald-600",
+//     },
+//     {
+//         quote: "Ta hanyar Kidashi, na sami damar fara kasuwanci na tare da tallafi daga mutanen amintattuna. Sharuɗɗan biyan kuɗi masu sassauci sun taimaka sosai a gare mu.",
+//         author: "Fatima Mohammed",
+//         role: "Entrepreneur",
+//         company: "Women's Cooperative",
+//         color: "from-pink-500 to-rose-600",
+//     },
+//     {
+//         quote: "Shinobi Core gave our microfinance bank the infrastructure we needed to scale. We've doubled our loan processing capacity in just 6 months.",
+//         author: "Chukwudi Okonkwo",
+//         role: "Operations Director",
+//         company: "Payrep MFB",
+//         color: "from-purple-500 to-violet-600",
+//     },
+//     {
+//         quote: "The instant trade finance from Farm4Factory has revolutionized how we work with suppliers. No more cash flow bottlenecks.",
+//         author: "Ngozi Adeola",
+//         role: "Accounting Manager",
+//         company: "Food Processing Ltd",
+//         color: "from-blue-500 to-indigo-600",
+//     },
+// ];
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
     const ref = useRef<HTMLSpanElement>(null);

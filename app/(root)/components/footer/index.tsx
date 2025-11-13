@@ -16,6 +16,7 @@ const footerLinks = {
         { name: 'About Us', href: '/about' },
         { name: 'Impact', href: '/impact' },
         { name: 'Partners', href: '/partners' },
+        { name: 'News', href: '/news' },
         { name: 'Contact', href: '/contact' },
     ],
     Resources: [

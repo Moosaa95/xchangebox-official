@@ -65,8 +65,8 @@ function AnimatedCounter({ value, suffix, duration = 2000 }: AnimatedCounterProp
 const stats = [
     {
         icon: Coins,
-        value: 200,
-        suffix: 'M+',
+        value: 5000,
+        suffix: '+',
         label: 'Trades Financed',
         prefix: '₦',
         color: 'from-green-500 to-emerald-600',
@@ -91,7 +91,7 @@ const stats = [
         icon: MapPin,
         value: 4,
         suffix: '+',
-        label: 'States Active',
+        label: 'Nigeria States Active',
         prefix: '',
         color: 'from-purple-500 to-violet-600',
     },

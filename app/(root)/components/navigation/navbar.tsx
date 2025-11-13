@@ -31,6 +31,7 @@ const navLinks = [
     { name: 'About', href: '/about' },
     { name: 'Impact', href: '/impact' },
     { name: 'Partners', href: '/partners' },
+    // { name: 'News', href: '/news' },
     { name: 'Contact', href: '/contact' },
 ];
 
@@ -79,7 +80,7 @@ export function Navbar() {
                         {/* Desktop Navigation */}
                         <div className="hidden lg:flex items-center gap-8">
                             {/* Products Dropdown */}
-                            <div
+                            {/* <div
                                 className="relative"
                                 onMouseEnter={() => setIsProductsOpen(true)}
                                 onMouseLeave={() => setIsProductsOpen(false)}
@@ -129,7 +130,7 @@ export function Navbar() {
                                         </motion.div>
                                     )}
                                 </AnimatePresence>
-                            </div>
+                            </div> */}
 
                             {/* Other nav links */}
                             {navLinks.map((link) => (

@@ -37,18 +37,28 @@ const team = [
         role: 'CEO',
         bio: 'Building the financial infrastructure for emerging markets',
         image: '/images/muhammad.jpg',
+        linkedin: 'https://www.linkedin.com/in/mohammed-ismail-8273a0247/',
     },
     {
         name: 'Abiola',
-        role: 'Co-Founder',
+        role: 'Co-founder/Co-CEO',
         bio: 'Creating products that serve real people and real needs',
         image: '/images/abiola.jpg',
+        linkedin: 'https://www.linkedin.com/in/jimohabiola/',
     },
     {
         name: 'Salim',
-        role: 'CTO',
+        role: 'Co-founder/CTO',
         bio: 'Designing scalable systems for millions of transactions',
         image: '/images/salim.jpg',
+        linkedin: 'https://www.linkedin.com/in/alhassansalim/',
+    },
+    {
+        name: 'Aisha',
+        role: 'Co-founder',
+        bio: '',
+        image: '/images/aisha.jpg',
+        linkedin: 'https://www.linkedin.com/in/aisha-iya-abubakar-16b0b416b/',
     },
 ];
 
@@ -317,7 +327,7 @@ export default function AboutPage() {
                         </p>
                     </motion.div>
 
-                    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                         {team.map((member, index) => (
                             <motion.div
                                 key={member.name}
