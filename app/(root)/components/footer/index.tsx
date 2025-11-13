@@ -7,11 +7,11 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const footerLinks = {
-    Products: [
-        { name: 'Farm4Factory', href: '/products/farm4factory' },
-        { name: 'Kidashi', href: '/products/kidashi' },
-        { name: 'Shinobi Core', href: '/products/shinobi' },
-    ],
+    // Products: [
+    //     { name: 'Farm4Factory', href: '/products/farm4factory' },
+    //     { name: 'Kidashi', href: '/products/kidashi' },
+    //     { name: 'Shinobi Core', href: '/products/shinobi' },
+    // ],
     Company: [
         { name: 'About Us', href: '/about' },
         { name: 'Impact', href: '/impact' },
@@ -20,7 +20,7 @@ const footerLinks = {
         { name: 'Contact', href: '/contact' },
     ],
     Resources: [
-        { name: 'Products', href: '/products' },
+        // { name: 'Products', href: '/products' },
         { name: 'Support', href: '/contact' },
     ],
     Legal: [

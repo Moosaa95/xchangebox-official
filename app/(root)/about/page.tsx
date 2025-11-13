@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Target, Users, Lightbulb, Award, Heart, TrendingUp, MapPin, Mail } from 'lucide-react';
+import { Target, Users, Lightbulb, Award, Heart, TrendingUp, MapPin, Mail, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -337,17 +337,28 @@ export default function AboutPage() {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="group"
                             >
-                                <div className="overflow-hidden rounded-2xl border-2 border-gray-200 bg-white transition-all hover:border-red-500 hover:shadow-xl">
+                                <div className="flex h-full flex-col overflow-hidden rounded-2xl border-2 border-gray-200 bg-white transition-all hover:border-red-500 hover:shadow-xl">
                                     <div className="relative h-64 w-full overflow-hidden bg-gray-100">
                                         <Image
                                             src={member.image}
                                             alt={member.name}
                                             fill
-                                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                            className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                                         />
                                     </div>
                                     <div className="p-6">
-                                        <h3 className="mb-1 text-xl font-bold text-gray-900">{member.name}</h3>
+                                        <div className="mb-2 flex items-center justify-between">
+                                            <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
+                                            <Link
+                                                href={member.linkedin}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="rounded-full bg-red-100 p-2 text-red-600 transition-all hover:bg-red-600 hover:text-white hover:shadow-lg hover:scale-110"
+                                                aria-label={`${member.name}'s LinkedIn profile`}
+                                            >
+                                                <Linkedin className="h-5 w-5" />
+                                            </Link>
+                                        </div>
                                         <div className="mb-3 text-sm font-semibold text-red-600">{member.role}</div>
                                         <p className="text-gray-600">{member.bio}</p>
                                     </div>
