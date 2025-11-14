@@ -10,24 +10,28 @@ const values = [
         title: 'Mission-Driven',
         description: 'We exist to unlock liquidity for underserved markets across Africa',
         color: 'from-red-500 to-red-600',
+        image: '/images/tractor.png',
     },
     {
         icon: Heart,
         title: 'Inclusive by Design',
         description: 'Financial tools built for everyone, not just the privileged few',
         color: 'from-pink-500 to-rose-600',
+        image: '/images/kidashi-woman.jpg',
     },
     {
         icon: Lightbulb,
         title: 'Innovation First',
         description: 'Leveraging technology to solve real-world problems at scale',
         color: 'from-blue-500 to-indigo-600',
+        image: '/images/innovation.jpg',
     },
     {
         icon: Award,
         title: 'Trust & Transparency',
         description: 'Every transaction is traceable, secure, and compliant',
         color: 'from-green-500 to-emerald-600',
+        image: '/images/farm4factory-partnership-model.png',
     },
 ];
 
@@ -56,7 +60,7 @@ const team = [
     {
         name: 'Aisha',
         role: 'Co-founder',
-        bio: '',
+        bio: 'Empowering communities through financial innovation',
         image: '/images/aisha.jpg',
         linkedin: 'https://www.linkedin.com/in/aisha-iya-abubakar-16b0b416b/',
     },
@@ -67,84 +71,137 @@ const timeline = [
         year: '2020',
         title: 'Foundation',
         description: 'XchangeBox was founded with a mission to transform financial inclusion',
-        icon: '🚀',
+        image: '/images/muhammad.jpg',
     },
     {
         year: '2021',
         title: 'First Product Launch',
         description: 'Payrep goes live, withdrawals, deposit with a strong agent network',
-        icon: '🌾',
-    },
-    {
-        year: '2025',
-        title: 'Women Empowerment',
-        description: 'Kidashi launches, bringing trust-circle finance to women communities',
-        icon: '👥',
-    },
-    {
-        year: '2025',
-        title: 'Infrastructure Scale',
-        description: 'Shinobi Core powers complete microfinance bank operations',
-        icon: '💾',
-    },
-    {
-        year: '2025',
-        title: 'First Product Launch',
-        description: 'Farm4Factory goes live, financing first batch of agricultural trades',
-        icon: '🌾',
+        image: '/images/payreppos.jpg',
     },
     // {
     //     year: '2025',
-    //     title: 'Pan-African Expansion',
-    //     description: 'Expanding our impact across multiple African markets',
-    //     icon: '🌍',
+    //     title: 'Women Empowerment',
+    //     description: 'Kidashi launches, bringing trust-circle finance to women communities',
+    //     image: '/images/aisha.jpg',
     // },
+    // {
+    //     year: '2025',
+    //     title: 'Infrastructure Scale',
+    //     description: 'Shinobi Core powers complete microfinance bank operations',
+    //     image: '/images/salim.jpg',
+    // },
+    {
+        year: '2025',
+        title: 'Agricultural Finance',
+        description: 'Farm4Factory goes live, financing first batch of agricultural trades',
+        image: '/images/farmer.jpg',
+    },
 ];
 
 export default function AboutPage() {
     return (
         <main className="min-h-screen pt-20">
-            {/* Hero Section */}
+            {/* Hero Section with Bento Grid */}
             <section className="relative overflow-hidden bg-linear-to-br from-[hsl(var(--navy-darker))] via-[hsl(var(--navy-dark))] to-[hsl(var(--navy-darker))] py-24">
                 <div className="absolute inset-0 bg-grid-pattern opacity-10" />
                 <div className="absolute inset-0 bg-linear-to-r from-red-500/10 via-transparent to-purple-500/10" />
 
                 <div className="container-custom relative z-10">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="mx-auto max-w-4xl text-center"
-                    >
-                        <h1 className="mb-6 text-5xl font-bold text-white lg:text-6xl">
-                            Building the Future of{' '}
-                            <span className="bg-linear-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
-                                Financial Inclusion
-                            </span>
-                        </h1>
-                        <p className="mb-8 text-xl text-gray-300">
-                            We're not just a fintech company. We're a mission to democratize access to capital
-                            and create opportunity for millions across Africa.
-                        </p>
-                        <div className="flex flex-wrap items-center justify-center gap-6">
-                            <div className="flex items-center gap-2 text-white">
-                                <MapPin className="h-5 w-5 text-red-500" />
-                                <span>Fct Abuja, Nigeria</span>
+                    <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+                        {/* Left Side - Text Content */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.8 }}
+                            className="flex flex-col justify-center"
+                        >
+                            <h1 className="mb-6 text-5xl font-bold text-white lg:text-6xl">
+                                Building the Future of{' '}
+                                <span className="bg-linear-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
+                                    Financial Inclusion
+                                </span>
+                            </h1>
+                            <p className="mb-8 text-xl text-gray-300">
+                                We're not just a fintech company. We're a mission to democratize access to capital
+                                and create opportunity for millions across Africa.
+                            </p>
+                            <div className="flex flex-wrap gap-6">
+                                <div className="flex items-center gap-2 text-white">
+                                    <MapPin className="h-5 w-5 text-red-500" />
+                                    <span>Fct Abuja, Nigeria</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-white">
+                                    <TrendingUp className="h-5 w-5 text-green-500" />
+                                    <span>5,000+ Trade cycles Financed</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-white">
+                                    <Users className="h-5 w-5 text-blue-500" />
+                                    <span>1,000+ Partners</span>
+                                </div>
                             </div>
-                            <div className="flex items-center gap-2 text-white">
-                                <TrendingUp className="h-5 w-5 text-green-500" />
-                                <span>₦20M+ Trades Financed</span>
-                            </div>
-                            <div className="flex items-center gap-2 text-white">
-                                <Users className="h-5 w-5 text-blue-500" />
-                                <span>1,000+ Partners</span>
-                            </div>
-                        </div>
-                    </motion.div>
+                        </motion.div>
+
+                        {/* Right Side - Bento Grid */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            className="grid grid-cols-2 gap-4"
+                        >
+                            {/* Top Left - Large */}
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.6, delay: 0.3 }}
+                                className="group relative col-span-2 h-[250px] overflow-hidden rounded-2xl"
+                            >
+                                <Image
+                                    src="/images/farm4factory-partnership-model.png"
+                                    alt="Impact"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
+                            </motion.div>
+
+                            {/* Bottom Left */}
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.6, delay: 0.4 }}
+                                className="group relative h-[200px] overflow-hidden rounded-2xl"
+                            >
+                                <Image
+                                    src="/images/kidashi-woman.jpg"
+                                    alt="Community"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
+                            </motion.div>
+
+                            {/* Bottom Right */}
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.6, delay: 0.5 }}
+                                className="group relative h-[200px] overflow-hidden rounded-2xl"
+                            >
+                                <Image
+                                    src="/images/payreppos.jpg"
+                                    alt="Technology"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
+                            </motion.div>
+                        </motion.div>
+                    </div>
                 </div>
             </section>
 
-            {/* Our Story */}
+            {/* Our Story with Image */}
             <section className="bg-white py-24">
                 <div className="container-custom">
                     <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
@@ -184,27 +241,49 @@ export default function AboutPage() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
-                            className="relative"
+                            className="relative grid grid-cols-2 gap-4"
                         >
-                            <div className="relative h-full min-h-[400px] overflow-hidden rounded-2xl bg-linear-to-br from-red-500 to-red-700 p-12">
-                                <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-                                <div className="relative z-10 flex h-full flex-col justify-center space-y-8 text-white">
-                                    <div className="text-6xl">📈</div>
-                                    <h3 className="text-3xl font-bold">Impact in Numbers</h3>
-                                    <div className="space-y-4">
-                                        <div>
-                                            <div className="text-4xl font-bold">₦20M+</div>
-                                            <div className="text-red-100">Trades Financed</div>
-                                        </div>
-                                        <div>
-                                            <div className="text-4xl font-bold">1,000+</div>
-                                            <div className="text-red-100">Active Partners</div>
-                                        </div>
-                                        <div>
-                                            <div className="text-4xl font-bold">70%</div>
-                                            <div className="text-red-100">Women-led Programs</div>
-                                        </div>
-                                    </div>
+                            {/* Large Image */}
+                            <div className="group relative col-span-2 h-[300px] overflow-hidden rounded-2xl">
+                                <Image
+                                    src="/images/kidashi-woman-two.jpg"
+                                    alt="Our Impact"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
+                                <div className="absolute bottom-6 left-6 text-white">
+                                    <div className="text-3xl font-bold">1,000+</div>
+                                    <div className="text-sm">Communities Empowered</div>
+                                </div>
+                            </div>
+
+                            {/* Small Images */}
+                            <div className="group relative h-[200px] overflow-hidden rounded-2xl">
+                                <Image
+                                    src="/images/tractor.png"
+                                    alt="Agricultural Impact"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
+                                <div className="absolute bottom-4 left-4 text-white">
+                                    <div className="text-2xl font-bold">5,000+</div>
+                                    <div className="text-xs">Trades</div>
+                                </div>
+                            </div>
+
+                            <div className="group relative h-[200px] overflow-hidden rounded-2xl">
+                                <Image
+                                    src="/images/group-one.jpg"
+                                    alt="Technology"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
+                                <div className="absolute bottom-4 left-4 text-white">
+                                    <div className="text-2xl font-bold"></div>
+                                    <div className="text-xs"></div>
                                 </div>
                             </div>
                         </motion.div>
@@ -212,7 +291,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Values */}
+            {/* Values with Images */}
             <section className="bg-gray-50 py-24">
                 <div className="container-custom">
                     <motion.div
@@ -242,12 +321,25 @@ export default function AboutPage() {
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                     className="group"
                                 >
-                                    <div className="h-full rounded-2xl border-2 border-gray-200 bg-white p-8 transition-all hover:border-red-500 hover:shadow-xl">
-                                        <div className={`mb-6 inline-flex rounded-xl bg-linear-to-br ${value.color} p-4`}>
-                                            <Icon className="h-8 w-8 text-white" />
+                                    <div className="h-full overflow-hidden rounded-2xl border-2 border-gray-200 bg-white transition-all hover:border-red-500 hover:shadow-xl">
+                                        {/* Image */}
+                                        <div className="relative h-48 w-full overflow-hidden">
+                                            <Image
+                                                src={value.image}
+                                                alt={value.title}
+                                                fill
+                                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                            />
+                                            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
+                                            <div className={`absolute bottom-4 left-4 inline-flex rounded-xl bg-linear-to-br ${value.color} p-3 shadow-lg`}>
+                                                <Icon className="h-6 w-6 text-white" />
+                                            </div>
                                         </div>
-                                        <h3 className="mb-3 text-xl font-bold text-gray-900">{value.title}</h3>
-                                        <p className="text-gray-600">{value.description}</p>
+                                        {/* Content */}
+                                        <div className="p-6">
+                                            <h3 className="mb-3 text-xl font-bold text-gray-900">{value.title}</h3>
+                                            <p className="text-gray-600">{value.description}</p>
+                                        </div>
                                     </div>
                                 </motion.div>
                             );
@@ -256,7 +348,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Timeline */}
+            {/* Timeline with Images */}
             <section className="bg-white py-24">
                 <div className="container-custom">
                     <motion.div
@@ -288,16 +380,31 @@ export default function AboutPage() {
                                 >
                                     {/* Content */}
                                     <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                                        <div className="rounded-2xl border-2 border-gray-200 bg-white p-6 shadow-lg transition-all hover:border-red-500 hover:shadow-xl">
-                                            <div className="mb-2 text-sm font-bold text-red-600">{item.year}</div>
-                                            <h3 className="mb-2 text-xl font-bold text-gray-900">{item.title}</h3>
-                                            <p className="text-gray-600">{item.description}</p>
+                                        <div className="group overflow-hidden rounded-2xl border-2 border-gray-200 bg-white shadow-lg transition-all hover:border-red-500 hover:shadow-xl">
+                                            {/* Image */}
+                                            <div className="relative h-48 w-full overflow-hidden">
+                                                <Image
+                                                    src={item.image}
+                                                    alt={item.title}
+                                                    fill
+                                                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                                />
+                                                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
+                                                <div className="absolute bottom-4 left-4 rounded-lg bg-red-600 px-3 py-1 text-sm font-bold text-white">
+                                                    {item.year}
+                                                </div>
+                                            </div>
+                                            {/* Text Content */}
+                                            <div className="p-6">
+                                                <h3 className="mb-2 text-xl font-bold text-gray-900">{item.title}</h3>
+                                                <p className="text-gray-600">{item.description}</p>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    {/* Icon */}
-                                    <div className="absolute left-8 md:left-1/2 -ml-8 flex h-16 w-16 items-center justify-center rounded-full border-4 border-white bg-linear-to-br from-red-500 to-red-600 text-3xl shadow-lg">
-                                        {item.icon}
+                                    {/* Icon Circle */}
+                                    <div className="absolute left-8 md:left-1/2 -ml-8 flex h-16 w-16 items-center justify-center rounded-full border-4 border-white bg-linear-to-br from-red-500 to-red-600 shadow-lg">
+                                        <div className="text-2xl font-bold text-white">{index + 1}</div>
                                     </div>
 
                                     {/* Spacer */}
@@ -369,9 +476,18 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* CTA */}
-            <section className="bg-linear-to-br from-red-600 to-red-700 py-24">
-                <div className="container-custom">
+            {/* CTA with Background Image */}
+            <section className="relative overflow-hidden py-24">
+                <div className="absolute inset-0">
+                    <Image
+                        src="/images/farm4factory-partnership-model.png"
+                        alt="Join Us"
+                        fill
+                        className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-linear-to-br from-red-600/95 to-red-700/95" />
+                </div>
+                <div className="container-custom relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
