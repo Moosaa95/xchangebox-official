@@ -64,7 +64,7 @@ export function HeroSection() {
                             className="flex items-center gap-6 pt-4"
                         >
                             <div className="flex flex-col">
-                                <span className="text-2xl font-bold text-gray-900">₦5,000+</span>
+                                <span className="text-2xl font-bold text-gray-900">5,000+</span>
                                 <span className="text-sm text-gray-600">Trade Cycles Financed</span>
                             </div>
                             <div className="h-12 w-px bg-gray-300" />
@@ -114,7 +114,7 @@ export function HeroSection() {
                                 className="col-span-2 row-span-2 relative rounded-2xl overflow-hidden shadow-lg group"
                             >
                                 <Image
-                                    src="/images/payreppos.jpg"
+                                    src="/images/sme-one.jpg"
                                     alt="Payment Solutions"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
