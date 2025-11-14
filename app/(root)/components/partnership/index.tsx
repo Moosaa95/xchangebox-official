@@ -3,11 +3,11 @@
 import { motion } from 'framer-motion';
 
 const partners = [
-    { name: 'AgroVista', src: '/logos/agrovista.jpg', width: 120 },
+    { name: 'AgroVista', src: '/logos/agrovesto.png', width: 120 },
     { name: 'Cascador', src: '/logos/cascador.jpg', width: 100 },
     { name: 'Extension Africa', src: '/logos/exaf-logo.png', width: 110 },
     { name: 'FalGates', src: '/logos/falgates.png', width: 115 },
-    { name: 'Loft', src: '/logos/loft.png', width: 115 },
+    { name: 'Loft', src: '/logos/lhoft.png', width: 115 },
     { name: 'Payrep Mfb', src: '/logos/payrepmfb.png', width: 115 },
     { name: 'Sagad Farms', src: '/logos/sagadfarms-logo.png', width: 115 },
     { name: 'Gates Foundation', src: '/logos/gates_foundation.png', width: 115 },
