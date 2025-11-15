@@ -71,13 +71,13 @@ const timeline = [
         year: '2020',
         title: 'Foundation',
         description: 'XchangeBox was founded with a mission to transform financial inclusion',
-        image: '/images/muhammad.jpg',
+        image: '/images/team-one.jpg',
     },
     {
         year: '2021',
         title: 'First Product Launch',
         description: 'Payrep goes live, withdrawals, deposit with a strong agent network',
-        image: '/images/payreppos.jpg',
+        image: '/images/team.jpg',
     },
     // {
     //     year: '2025',
@@ -104,8 +104,17 @@ export default function AboutPage() {
         <main className="min-h-screen pt-20">
             {/* Hero Section with Bento Grid */}
             <section className="relative overflow-hidden bg-linear-to-br from-[hsl(var(--navy-darker))] via-[hsl(var(--navy-dark))] to-[hsl(var(--navy-darker))] py-24">
-                <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-                <div className="absolute inset-0 bg-linear-to-r from-red-500/10 via-transparent to-purple-500/10" />
+                <div className="absolute inset-0">
+                    <Image
+                        src="/images/team-one.jpg"
+                        alt="Impact"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-linear-to-br from-[hsl(var(--navy-darker))]/95 via-[hsl(var(--navy-dark))]/90 to-[hsl(var(--navy-darker))]/95" />
+                    <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+                </div>
 
                 <div className="container-custom relative z-10">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
@@ -157,7 +166,7 @@ export default function AboutPage() {
                                 className="group relative col-span-2 h-[250px] overflow-hidden rounded-2xl"
                             >
                                 <Image
-                                    src="/images/farm4factory-partnership-model.png"
+                                    src="/images/rural_life.jpg"
                                     alt="Impact"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -173,7 +182,7 @@ export default function AboutPage() {
                                 className="group relative h-[200px] overflow-hidden rounded-2xl"
                             >
                                 <Image
-                                    src="/images/kidashi-woman.jpg"
+                                    src="/images/A.jpg"
                                     alt="Community"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -189,7 +198,7 @@ export default function AboutPage() {
                                 className="group relative h-[200px] overflow-hidden rounded-2xl"
                             >
                                 <Image
-                                    src="/images/payreppos.jpg"
+                                    src="/images/rural.jpg"
                                     alt="Technology"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
