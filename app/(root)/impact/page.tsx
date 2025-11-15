@@ -70,7 +70,7 @@ const stats = [
         value: 5000,
         suffix: '+',
         label: 'Trades Financed',
-        prefix: '₦',
+        prefix: '',
         color: 'from-green-500 to-emerald-600',
     },
     {
@@ -248,7 +248,7 @@ export default function ImpactPage() {
                             </div>
                             <div className="group relative col-span-2 h-48 overflow-hidden rounded-2xl">
                                 <Image
-                                    src="/images/payreppos.jpg"
+                                    src="/images/impact-one.jpg"
                                     alt="Digital Infrastructure"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -320,8 +320,8 @@ export default function ImpactPage() {
                             const images = [
                                 '/images/financial-inclusion.png',
                                 '/images/kidashi-woman.jpg',
-                                '/images/payreppos.jpg',
-                                '/images/kidashi-woman-two.jpg'
+                                '/images/supply-chain.jpg',
+                                '/images/job-creation.jpg'
                             ];
                             return (
                                 <motion.div
@@ -566,12 +566,12 @@ export default function ImpactPage() {
                                     <div className="h-full overflow-hidden rounded-2xl border-2 border-gray-200 bg-white shadow-lg transition-all hover:border-red-500 hover:shadow-2xl">
                                         {/* Image with Avatar Overlay */}
                                         <div className="relative h-48 w-full overflow-hidden">
-                                            <Image
+                                            {/* <Image
                                                 src={images[index]}
                                                 alt={testimonial.author}
                                                 fill
                                                 className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                            />
+                                            /> */}
                                             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent" />
                                             <div className="absolute bottom-4 left-6 flex items-center gap-3">
                                                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-4xl shadow-lg">
