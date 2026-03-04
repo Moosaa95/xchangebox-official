@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, MessageCircle, Clock } from 'lucide-react';
 import { useState } from 'react';
+import Script from 'next/script';
 
 const contactMethods = [
     {
@@ -326,8 +327,32 @@ export default function ContactPage() {
                 </div>
             </section>
 
+            {/* Schedule Meeting Section */}
+            <section className="bg-white py-24 border-b border-gray-200">
+                <div className="container-custom">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <h2 className="mb-6 text-center text-4xl font-bold text-gray-900">
+                            Book a Meeting
+                        </h2>
+                        <p className="mb-12 text-center text-lg text-gray-600">
+                            Choose a time that works best for you
+                        </p>
+                        
+                        <div className="mx-auto rounded-2xl bg-white shadow-xl overflow-hidden" style={{ minHeight: '700px' }}>
+                            <div className="calendly-inline-widget" data-url="https://calendly.com/abiola-startupscltd/30min" style={{ minWidth: '320px', height: '700px' }} />
+                            <Script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async />
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
             {/* Map Section */}
-            <section className="bg-white py-24">
+            <section className="bg-gray-50 py-24">
                 <div className="container-custom">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
